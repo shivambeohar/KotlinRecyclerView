@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="user"
+            type="com.example.kotlinusers.model.room.User" />
+    </data>
+<androidx.cardview.widget.CardView android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    app:cardCornerRadius="12dp"
+    android:elevation="15dp"
+    android:layout_margin="8dp"
+    app:cardElevation="12dp">
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/img_username"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_person_black_24dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp" />
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/img_username"
+            android:layout_marginStart="30dp"
+            tool:hint="username"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+
+        <ImageView
+            android:id="@+id/img_email"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_email_black_24dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_below="@+id/tv_username" />
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/img_email"
+            android:layout_marginTop="27dp"
+            android:layout_marginStart="30dp"
+            android:textSize="20sp"
+            tool:hint = "email address"
+            android:textStyle="italic" />
+
+        <ImageView
+            android:id="@+id/img_contact"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_call_black_24dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_below="@+id/tv_email" />
+
+        <TextView
+            android:id="@+id/tv_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/img_contact"
+            tool:hint = "contact"
+            android:layout_marginTop="54dp"
+            android:layout_marginStart="30dp"
+            android:textSize="20sp"
+            android:textStyle="italic"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+</layout>
